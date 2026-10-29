@@ -154,7 +154,7 @@ export function StationMap({
 
     (async () => {
       const maplibregl = await import("maplibre-gl");
-      maplibregl.setWorkerUrl("/maplibre-worker");
+      maplibregl.setWorkerUrl("/maplibre-gl-worker.mjs");
       if (cancelled || !holder.current) return;
       const created = new maplibregl.Map({
         container: holder.current,
