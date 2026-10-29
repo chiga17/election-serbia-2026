@@ -99,16 +99,6 @@ export function Explorer() {
           </Tabs>
         </div>
         <SnapshotLine election={election} />
-        <p className="text-sm text-muted-foreground">
-          <a
-            className="underline decoration-border underline-offset-2 hover:decoration-foreground"
-            href="/Shpilkin-Serbia.html"
-            download="Shpilkin-Serbia.html"
-          >
-            Download one file to share
-          </a>
-          . It opens in a browser with no connection and no install.
-        </p>
         <p className="max-w-3xl text-base leading-relaxed">{reading.lead}</p>
         {reading.shape && (
           <p className="max-w-3xl text-base leading-relaxed text-foreground/80">
@@ -372,8 +362,7 @@ export function Explorer() {
             <a className="underline decoration-border underline-offset-2 hover:decoration-foreground" href={election.sourcePage}>
               {election.sourceName}
             </a>
-            , parsed from commission protocols. Refresh the file with{" "}
-            <code className="text-foreground">python3 scripts/build-election-data.py</code>.
+            , parsed from commission protocols.
           </p>
         </div>
       </section>
